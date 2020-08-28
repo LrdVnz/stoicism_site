@@ -1,0 +1,73 @@
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.backimg {
+    position: relative;
+    background-image: url("./images/wp.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#intro-title {
+    font-size: 60px;
+    position: absolute;
+    color: white;
+    left: 30px;
+}
+
+#intro-subtitle {
+    position: absolute;
+    color: white;
+    top: 85px;
+    left: 30px;
+}
+
+#trytxt {
+    font-size: 30px;
+}
+
+.navmenu {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 100px;
+    font-size:33px;
+}
+
+#basicslink {
+    margin: 70px;
+    margin-top: 10px;
+    background-color: #101010;
+}
+
+#basicslink a {
+    color : #efefef;
+    text-decoration-line: none;
+}
+
+#modernlink {
+    margin: 70px;
+    background-color: #101010;
+}
+
+#modernlink a {
+    color : #efefef;
+    text-decoration-line: none;
+}
+
+#authorslink {    
+    margin: 70px;
+    background-color: #101010;
+}
+
+#authorslink a {
+    color : #efefef;
+    text-decoration-line: none;
+}

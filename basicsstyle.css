@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+.listone .flex-container {
+    display: flex;
+    flex-direction: column;
+}
