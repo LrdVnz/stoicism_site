@@ -1,49 +1,55 @@
-
+* {
+    box-sizing: border-box;
+}
 
 body, html {
     height: 100%;
     margin: 0;
 }
 
-.backimg {
-    position: relative;
+body {
+    position: fixed;
     background-image: url("./images/wp.jpg");
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+.mainbody {
+    position: relative;
+}
+
+.titlebox {
+    display: flex;
+    position: relative  ;
+    flex-direction: column; 
+    width: 800px;
+    height: 100px;
+    left: 30px;
+}
+
 #intro-title {
-    font-size: 60px;
-    position: absolute;
+    align-self: flex-start;
+    font-size: 4vw;
     color: white;
     left: 30px;
 }
 
 #intro-subtitle {
-    position: absolute;
+    align-self: flex-start;
+    font-size: 3vw;
     color: white;
     top: 85px;
     left: 30px;
 }
 
-#trytxt {
-    font-size: 30px;
-}
-
-.navmenu {
-    display: block;
-    position: absolute;
-    text-align: center;
-    top: 200px;
-    left: 100px;
-    font-size:33px;
-}
-
 #basicslink {
-    margin: 70px;
-    margin-top: 10px;
+    align-self: safe center;
+    width: 200px;
+    text-align: center;
+    font-size: 2vw;
+    margin: 20px;
+    margin-top: 60px;
     background-color: #101010;
 }
 
@@ -53,7 +59,11 @@ body, html {
 }
 
 #modernlink {
-    margin: 70px;
+    align-self: safe center;
+    width: 200px;
+    text-align: center;
+    font-size: 2vw;
+    margin: 20px;
     background-color: #101010;
 }
 
@@ -62,8 +72,12 @@ body, html {
     text-decoration-line: none;
 }
 
-#authorslink {    
-    margin: 70px;
+#authorslink {
+    align-self: safe center;
+    width: 200px;
+    text-align: center;
+    font-size: 2vw;     
+    margin: 20px;
     background-color: #101010;
 }
 
