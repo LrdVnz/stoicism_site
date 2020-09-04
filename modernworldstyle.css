@@ -1,6 +1,3 @@
-* {
-    box-sizing: border-box;
-}
 
 h1 {
     text-align: center;
@@ -13,39 +10,23 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.topfamily {
-  display: grid;
-  left: 100px;
-  grid-template-columns: repeat(4, 2fr);
-}
-
-.topfamily div:nth-of-type(2n) {
-    height: 125.39px;
-    line-height: 125.39px;
-    vertical-align: middle;
-}
-
 #maintxt {
-    display: block;
-    margin: 0 auto;
+    grid-column: 1 / 5;
     text-align: center;
-    color: lightsalmon ;
-    line-height: 25px;
-    width: 80%;
-    vertical-align: middle;
     border: 2px solid black;
+    padding: 10px;
+    color: #712101 ;
 }
 
-.bottomfamily {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    position: relative;
-    top: 120px;
+.maincontainer {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    height: 50vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 11vw);
+    grid-column-gap: 30px;
+    place-items: center;
+    grid-column: auto;
 }
 
-.bottomfamily div:nth-of-type(2n) {
-    height: 125.39px;
-    line-height: 125.39px;
-    vertical-align: middle;
-}
