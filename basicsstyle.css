@@ -2,7 +2,131 @@
     box-sizing: border-box;
 }
 
-.listone .flex-container {
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: fixed;
+    background-image: url("./images/graycolumnstiny.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#listonetitle {
+    position: absolute;
+    top : 95px; 
+    left : 50px;
+    width: 500px;
+    text-align: center;
+}
+
+.listone {
+    position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-around;
+    top: 150px; 
+    width: 500px;
+    height: 500px;
+    left: 50px;
+    flex-wrap: wrap;
+    background-color: #80808066;
+}
+
+.listone div:nth-of-type(n){
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 3px;
+    border-style: 2px solid black ;
+}
+
+#wisdom {
+    background-image: url("./images/wisdomtiny.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #2b2b2b;
+    text-align: center ;
+    vertical-align: middle; 
+    line-height: 200px;
+}
+
+#courage {
+    background-image: url("./images/couragetiny.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+}
+
+#justice {
+    background-image: url("./images/justicetiny.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+}
+
+#temperance {
+    background-image: url("./images/temperancetiny.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center; 
+    vertical-align: middle;
+    line-height: 200px;
+}
+
+#principles{
+    position: absolute;
+    left: 700px;
+    width: 500px;
+    text-align: center;
+    top: 100px;
+}
+
+.listtwo {
+    position: absolute;
+    display: grid;
+    grid-template-rows: auto;
+    top: 150px;
+    left: 700px;
+    width: 500px;
+    row-gap: 30px;
+}
+
+#two-1 {
+    background-color: #ffffff7a;
+    padding-left: 6px;
+    border-left: 5px solid #4c4c4c;
+}
+
+#two-2 {
+    background-color: #ffffff7a;
+    padding-left: 6px;
+    border-left: 5px solid #4c4c4c;
+}
+
+#two-3 {
+    background-color: #ffffff7a;
+    padding-left: 6px;
+    border-left: 5px solid #4c4c4c;
+}
+
+#two-4 {
+    background-color: #ffffff7a;
+    padding-left: 6px;
+    border-left: 5px solid #4c4c4c;
+}
+
+#two-5 {
+    background-color: #ffffff7a;
+    padding-left: 6px;
+    border-left: 5px solid #4c4c4c;
 }

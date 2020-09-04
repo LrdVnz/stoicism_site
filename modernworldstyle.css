@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    height: 10%;
+}
+
+body, html {
+    height: 95%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topfamily {
+  display: grid;
+  left: 100px;
+  grid-template-columns: repeat(4, 2fr);
+}
+
+.topfamily div:nth-of-type(2n) {
+    height: 125.39px;
+    line-height: 125.39px;
+    vertical-align: middle;
+}
+
+#maintxt {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: lightsalmon ;
+    line-height: 25px;
+    width: 80%;
+    vertical-align: middle;
+    border: 2px solid black;
+}
+
+.bottomfamily {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 120px;
+}
+
+.bottomfamily div:nth-of-type(2n) {
+    height: 125.39px;
+    line-height: 125.39px;
+    vertical-align: middle;
+}
