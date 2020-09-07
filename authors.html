@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="authorsstyle.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <section class="container">
+        <div class="aurelio">
+            <img src="./images/marcoaureliotransp.jpg" alt="Marcus Aurelius">
+            <h2>Marcus aurelius</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo sit cum provident ea fugit veniam a,
+                officia alias iure eveniet consequatur id numquam nesciunt voluptatum deserunt necessitatibus est hic.
+            </p>
+            <h3>Books:</h3>
+            <span>Meditations</span>
+            <button>next author</button>
+        </div>
+        <div class="seneca">
+            <img src="./images/senecatiny.jpg" alt="Seneca">
+            <h2>Seneca</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati delectus, ex similique quis repudiandae magnam explicabo quod,
+                minima atque aut eaque necessitatibus laboriosam inventore exercitationem blanditiis beatae dicta
+                aperiam.
+                Eum! </p>
+            <h3>Books</h3>
+            <span>sulla brevita della vita</span>
+            <button>next author</button>
+        </div>
+        <div class="epictetus">
+            <img src="./images/epictetustiny.jpg" alt="Epictetus">
+            <h2>Epictetus</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati delectus, ex similique quis repudiandae magnam explicabo quod,
+                minima atque aut eaque necessitatibus laboriosam inventore exercitationem blanditiis beatae dicta
+                aperiam.
+                Eum! </p>
+            <h3>Books</h3>
+            <span>sulla brevita della vita</span>
+            <button>next author</button>
+        </div>
+    </section>
+
+    <script>
+        let buttons = document.querySelectorAll('button')
+        console.log(buttons)
+        
+        let i = 0 
+
+        let showNext = function (author) {
+            console.log(author)
+            if (author.style.display == "none") {
+               author.style.display = "grid"
+            } else {
+                author.style.display = "none"
+            }
+        }
+        
+        let btn = buttons[i]
+        btn.addEventListener("click", function () {
+            parent = btn.parentElement
+            nextnode = parent.nextElementSibling
+            nextAuthor = nextnode.className.toString()
+            let thenext = document.querySelector('.' + nextAuthor)
+            console.log(showNext(thenext))
+            i++ 
+        })
+
+
+    </script>
+
 </body>
+
 </html>

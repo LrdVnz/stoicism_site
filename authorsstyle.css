@@ -1,0 +1,65 @@
+
+#container {
+   position: relative;
+}
+
+button {
+   appearance: none; 
+   background-color: transparent;
+   border: none;
+   text-decoration-line: underline;
+   grid-row: 5 ;
+   grid-column: 2;
+}
+
+h3 {
+   grid-row: 3; 
+}
+
+img {
+   width: 350px;
+   grid-row: 1 / 6;
+}
+
+span {
+   grid-row: 4;
+}
+
+div {
+   position: absolute;
+   display: grid;
+   grid-template-columns: inherit 1fr;
+   column-gap: 20px;
+   grid-template-rows: 0.5fr 1.5fr 0.5fr 0.25fr 0.25fr;
+   margin:  0 auto;
+   width : 60%;
+   top: 25%;
+   left: 20%;
+   text-align: center;
+}
+
+.seneca {
+   position: absolute;
+   display: none;
+   grid-template-columns: inherit 1fr;
+   column-gap: 20px;
+   grid-template-rows: 0.5fr 1.5fr 0.5fr 0.25fr 0.25fr;
+   margin:  20px auto;
+   width : 60%;
+   top: 600px;
+   left: 20%;
+   text-align: center;
+}
+
+.epictetus {
+   position: absolute;
+   display: none;
+   grid-template-columns: inherit 1fr;
+   column-gap: 20px;
+   grid-template-rows: 0.5fr 1.5fr 0.5fr 0.25fr 0.25fr;
+   margin:  20px auto;
+   width : 60%;
+   top: 1000px;
+   left: 20%;
+   text-align: center;
+}
