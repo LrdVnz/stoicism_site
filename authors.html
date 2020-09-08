@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="authorsstyle.css">
-    <title>Document</title>
+    <title>Authors</title>
 </head>
 
 <body>
@@ -41,36 +41,44 @@
                 aperiam.
                 Eum! </p>
             <h3>Books</h3>
-            <span>sulla brevita della vita</span>
+            <span>il superfigo libro di EPICOtetus</span>
             <button>next author</button>
         </div>
     </section>
 
     <script>
-        let buttons = document.querySelectorAll('button')
-        console.log(buttons)
+        let container = document.querySelector('.container')
+        let divs = container.children
+         
+        divchildren = []
         
-        let i = 0 
+        for(let j = 0 ; j < divs.length; j++){
+          divchildren.push(divs[j].children)             
+        }
+        
+        buttons = []
 
-        let showNext = function (author) {
-            console.log(author)
+        for(let n = 0 ; n < divchildren.length; n++){
+                buttons.push(divchildren[n].item(5))
+        }
+
+        function showNext(author) {
             if (author.style.display == "none") {
                author.style.display = "grid"
             } else {
                 author.style.display = "none"
             }
         }
-        
-        let btn = buttons[i]
-        btn.addEventListener("click", function () {
-            parent = btn.parentElement
-            nextnode = parent.nextElementSibling
-            nextAuthor = nextnode.className.toString()
+         
+        for(let i = 0;i < buttons.length; i++){
+            buttons[i].addEventListener("click", function () {
+            let parent = buttons[i].parentElement
+            let nextnode = parent.nextElementSibling
+            let nextAuthor = nextnode.className.toString()
             let thenext = document.querySelector('.' + nextAuthor)
-            console.log(showNext(thenext))
-            i++ 
+            showNext(thenext)
         })
-
+        }
 
     </script>
 

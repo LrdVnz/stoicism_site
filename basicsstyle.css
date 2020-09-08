@@ -8,6 +8,10 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    text-align: center;
+}
+
 body {
     position: fixed;
     background-image: url("./images/graycolumnstiny.jpg");

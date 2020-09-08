@@ -2,12 +2,15 @@
 h1 {
     text-align: center;
     height: 10%;
+    width: 800px;
+    margin: 20px auto;
 }
 
 body, html {
     height: 95%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite; 
 }
 
 #maintxt {
@@ -29,4 +32,3 @@ body, html {
     place-items: center;
     grid-column: auto;
 }
-

@@ -1,3 +1,6 @@
+body{
+   background-color: #f5f3da
+}
 
 #container {
    position: relative;
@@ -32,7 +35,7 @@ div {
    column-gap: 20px;
    grid-template-rows: 0.5fr 1.5fr 0.5fr 0.25fr 0.25fr;
    margin:  0 auto;
-   width : 60%;
+   width : 65%;
    top: 25%;
    left: 20%;
    text-align: center;
@@ -45,7 +48,7 @@ div {
    column-gap: 20px;
    grid-template-rows: 0.5fr 1.5fr 0.5fr 0.25fr 0.25fr;
    margin:  20px auto;
-   width : 60%;
+   width : 65%;
    top: 600px;
    left: 20%;
    text-align: center;
@@ -58,8 +61,8 @@ div {
    column-gap: 20px;
    grid-template-rows: 0.5fr 1.5fr 0.5fr 0.25fr 0.25fr;
    margin:  20px auto;
-   width : 60%;
-   top: 1000px;
+   width : 65%;
+   top: 1075px;
    left: 20%;
    text-align: center;
 }
